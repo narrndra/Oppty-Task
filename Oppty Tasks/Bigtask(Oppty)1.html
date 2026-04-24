@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <style>
+  .container{
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px gray;
+            background-color: aqua;
+  }
+  .container:hover{
+    cursor: pointer;
+    border-style: double;
+  }
+            .reset{
+              margin-left: 725px;
+            }
+  </style>
+</head>
+<body bgcolor="green">
+  <div class="container">
+    <header>
+  <h1 align="center">
+    Student Registration Form
+  </h1>
+  </header>
+  <form>
+    <label>Roll No:</label>
+    <input type="number" name="rollnumber" placeholder="Enter your Roll Number" autofocus>
+    <br>
+    <br>
+     <label>Student Name:</label>
+    <input type="text" name="name" placeholder="Enter your Full Name" autofocus>
+    <br>
+    <br>
+     <label>Father's Name:</label>
+    <input type="text" name="name" placeholder="Enter your Father's Name" autofocus>
+    <br>
+    <br>
+      <label>Mother's Name:</label>
+    <input type="text" name="name" placeholder="Enter your Mother's Name" autofocus>
+    <br>
+    <br>
+     <label>DOB:</label>
+    <input type="date" name="dob" placeholder="Enter your DOB" autofocus>
+    <br>
+    <br>
+     <label>Mobile Number:</label>
+    <input type="number" name="mobilenumber" placeholder="Enter your Mobile Number" autofocus>
+    <br>
+    <br>
+     <label>Email Id:</label>
+    <input type="email" name="mail" placeholder="Enter your Mail Id" autofocus>
+    <br>
+    <br>
+     <label>Password:</label>
+    <input type="password" name="pwd" placeholder="Enter your Password" autofocus>
+    <br>
+    <br>
+     <label>Gender:</label>
+    <input type="radio" name="gender">Male
+    <input type="radio" name="gender">Female
+    <input type="radio" name="gender">Other
+    <br>
+    <br>
+     <label>Department:</label>
+    <input type="radio" name="course">CSE
+    <input type="radio" name="course">IT
+    <input type="radio" name="course">ECE
+    <input type="radio" name="course">Civil
+    <input type="radio" name="course">Mech
+    <br>
+    <br>
+     <label>Course:</label>
+    <select>
+      <option>
+        B. Tech/B.E
+      </option>
+       <option>
+        B. Sc
+      </option>
+       <option>
+        BCA
+      </option>
+       <option>
+        B. Com
+      </option>
+    </select>
+    <br>
+    <br>
+     <label>Student Photo:</label>
+    <input type="file">
+    <br>
+    <br>
+     <label>Roll No:</label>
+    <input type="number" name="rollnumber" placeholder="Enter your Roll Number" autofocus>
+    <br>
+    <br>
+     <label>City:</label>
+ <input type="text" name="City" placeholder="Enter your City" autofocus>
+ <br>
+ <br>
+ <label>Permanent Address:</label>
+ <textarea>Address</textarea>
+ <br>
+ <br>
+  </div>
+  <br>
+<div style="text-align: center;">
+  <button class="b1" type="submit">Register</button>
+</div>
+<br>
+<div class="reset">
+  <button type="reset" onclick="alert('Please Reenter details')">Reset</button>
+</div>
+  </form>
+  <footer align="center">@ Student Registration Form</footer>
+</body>
+</html>
