@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Task</title>
+  <style>
+    .pa{
+      box-shadow: 0px 0px 8px red;
+      border-radius: 5px;
+      padding-bottom: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 40px;
+      background-color: blueviolet;
+      color: #fff;
+    }
+    .col{
+      box-shadow: 0px 0px 8px black;
+      border-radius: 5px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 20px;
+      padding-top: 10px;
+    }
+    .b1{
+      background-color: red;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 20px 40px 20px 40px;
+    }
+    .b2{
+      background-color:green;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 20px 40px 20px 40px;
+    }
+    .b3{
+      background-color:blue;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 20px 40px 20px 40px;
+    }
+    .b4{
+      background-color:grey;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 20px 40px 20px 40px;
+    }
+    .line{
+      padding-left: 630px;
+      padding-bottom: 70px;
+      padding-top: 70px;
+      border-radius: 8px;
+      background-color: orangered
+    }
+    .col1{
+      box-shadow: 0px 0px 8px red;
+      border-radius: 5px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+    }
+    .butt{
+      border-radius: 50px;
+      background-color: blue;
+    }
+    .col2{
+       box-shadow: 0px 0px 8px red;
+      border-radius: 5px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+    }
+    .hove:hover{
+      cursor: pointer;
+      box-shadow: 0px 0px 8px red;
+      border-radius: 5px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      transform: scale(1:1);
+    }
+    .col3{
+       box-shadow: 0px 0px 8px red;
+      border-radius: 5px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+    }
+    .p1::first-letter{
+      color: blue;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .di1{
+      box-shadow: 0px 0px 8px red;
+      border-radius: 5px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+    }
+    .ov{
+      width: 100%;
+      border: 1px solid green;
+      overflow: scroll;
+      padding-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+  <div class="pa">
+    <center>
+  <p style="font-weight: bold;">Mastering CSS Styling</p>
+  <p>A Comprehensive Visual Reference Guide</p>
+  </center>
+  </div>
+  <br>
+  <div class="col">
+    <h2>1. Color Systems</h2>
+    <hr>
+    <p style="color: gray;">Colors can be defined using names, Hex codes, RGB, or HSL values.</p>
+    <button class="b1">HEX (#e74c3c)</button>
+    <button class="b2">RGB (46, 204, 113)</button>
+    <button class="b3">HSL (200, 100%, 50%)</button>
+    <button class="b4">RGBA Transparency</button>
+  </div>
+  <br>
+  <div class="col1">
+   <h2>2. Backgrounds & Gradients</h2> 
+   <hr>
+   <p class="line">Linear Gradient Background</p>
+   <p>Using linear-gradient(45deg, #ff6b6b, #feca57) for modern UI looks.</p>
+  </div>
+  <br>
+  <div class="col2">
+    <h2>3. Borders & Shapes</h2>
+    <hr>
+    <button style="border-style: dashed; border-color: blue; padding: 10px 10px 10px 10px;" >Dashed Border</button>
+    <button style="border-style: dotted; border-color: blue; padding: 10px 10px 10px 10px;">Dotted Border</button>
+    <button style="border-style: double; border-color: blue; padding: 10px 10px 10px 10px;">Dotted Border</button>
+    <button style="border-radius: 9px; border-color: blue; padding: 10px 10px 10px 10px;">Rounded Corners</button>
+    <button class ="butt">0</button>
+  </div>
+  <br>
+  <div class="col3">
+   <h2>4. Shadows & Hover Effects</h2>
+   <hr>
+   <div class="hove">
+    <p>Box Shadow Card</p>
+    <hr>
+    <p>Hover over this card to see the shadow transition and lift effect.</p>
+    <button style="background-color: blueviolet; color: white;">Interactive Button</button>
+   </div>
+  </div>
+  <br>
+  <div class="di1">
+    <h2>5. Text & Typography</h2>
+    <hr>
+    <p class="p1">This paragraph uses the ::first-letter pseudo-element to create a "Drop Cap" effect. It adds a touch of classic 
+      publishing style to modern web design.</p>
+      <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">This text uses small-caps, spacing, and capitalization properties.</p>
+      <input type="text" placeholder="This is a very long sentence that w....." style="width: 15%;"">
+  </div>
+  <br>
+  <br>
+<div class="col">
+  <h2>6. Structure (Lists & Tables)</h2>
+  <hr>
+  <ul style="list-style-type: square;">
+    <li>Square Bullet Point 1</li>
+    <li>Square Bullet Point 2</li>
+    <li>Square Bullet Point 3</li>
+  </ul>
+  <table border="1" width="100%" cellpadding="10" style="border-collapse: collapse;">
+    <tr style="background-color: lightgray;">
+      <th>Property</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>border-collapse</td>
+      <td>Combines table borders into one.</td>
+    </tr>
+    <tr>
+      <td>nth-child</td>
+      <td>Styles specific rows (like zebra stripes).</td>
+    </tr>
+  </table>
+</div>
+<br>
+<div class="col">
+  <h2>7. Overflow Control</h2>
+  <hr>
+  <div class="ov">
+    This is a scrollable container. Inside here is a lot of content that exceeds 
+    the 100px height limit set on the parent. Because overflow: auto is used, 
+    the browser provides a scrollbar only when necessary.<br><br>
+    Line 2 of content...<br>
+    Line 3 of content...<br>
+    Line 4 of content...<br>
+  </div>
+</div>
+  </div>
+</body>
+</html>
