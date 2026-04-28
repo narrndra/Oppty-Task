@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS</title>
+  <style>
+    body{
+      background-color: #f3f4f6;
+      font-family: Arial, sans-serif;
+    }
+    .image{
+      border-radius: 50%;
+      border: 6px solid blueviolet;
+      width: 120px;
+      height: 120px;
+      display: block;
+      margin: 0 auto;
+      object-fit: cover;
+    }
+    .jon{
+      text-align: center;
+      margin-top: 10px;
+    }
+    .c1{
+      display: flex;
+      justify-content: space-around; 
+      margin-top: 15px;
+      text-align: center;
+    }
+    .main{
+      width: 300px; 
+      background: white;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+      margin: 60px auto;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    button{
+      display: block;
+      margin: 20px auto; 
+      border-radius: 30px;
+      padding: 10px 40px;
+      background-color: blue;
+      color: white;
+      cursor: pointer;
+      border: none;
+      font-size: 15px;
+    }
+    button:hover{
+      background-color: darkblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <img class="image"
+    src="https://thumbs.dreamstime.com/b/portrait-normal-boy-rimmed-glasses-attractive-young-man-studio-looking-camera-30450134.jpg" alt="image">
+    <h2 class="jon">Narendra</h2>
+    <p style="text-align: center; color: gray;">Senior Software Developer</p>
+    <hr>
+    <div class="c1">
+      <div>
+        <h3>12.5k</h3>
+        <p>Followers</p>
+      </div>
+      <div>
+        <h3>843</h3>
+        <p>Following</p>
+      </div>
+      <div>
+        <h3>42</h3>
+        <p>Projects</p>
+      </div>
+    </div>
+    <hr>
+    <button>Follow User</button>
+  </div>
+</body>
+</html>
