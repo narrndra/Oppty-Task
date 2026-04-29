@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .image1 img,
+.image2 img{
+  width: 10%;
+  height: auto;
+  border-radius: 10px;
+  display: block;     
+  margin: 0 auto; 
+  margin-bottom: 10px;    
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  gap:180px;
+}
+.i1,.i2,.i3{
+  width:10%;
+  border-radius: 10px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:20px;
+}
+.i4,.i5,.i6,.i7,.i8,.i9{
+  border-radius: 10px;
+  width:40%;
+}
+.main{
+  width: 50%;
+  padding: 20px;              
+  box-shadow: 0px 0px 20px red;
+  margin: 50px auto;         
+  border-radius: 9px;
+}
+</style>
+<body>
+  <div class="main">
+  <h1>Image Display Arrangement</h1>
+  <h3>Images as Block(display: block)</h3>
+  <p>Each image takes its own line and stacks vertically.</p>
+  <div>
+    <div class="image1" ><img src="https://tse3.mm.bing.net/th/id/OIP.ArBONFfA0yBH5QIIipz8KwHaE7?pid=Api&h=220&P=0" alt="beach"></div>
+    <div class="image2" ><img src="https://tse1.mm.bing.net/th/id/OIP.u9UJy9mNY-pgkvzriyD53QHaEK?pid=Api&h=220&P=0" alt="beach1"></div>
+  </div>
+  <br>
+  <div>
+    <h3>Images as Flexbox(display: flex)</h3>
+    <p>Images sit in a row and are spaced evenly.</p>
+    <div class="flex">
+      <img class="i1" src="https://photos.francisfrith.com/frith/waterbeach-the-bridge-hotel-clayhithe-c1960_w509019_large.jpg">
+      <img class="i2" src="https://s3.geograph.org.uk/geophotos/07/75/28/7752895_0bd0d481_1024x1024.jpg">
+      <img class="i3" src="https://s2.geograph.org.uk/geophotos/07/70/26/7702622_a54deea8_1024x1024.jpg">
+    </div>
+  </div>
+  <br>
+  <div>
+    <h3>Images as Grid(display: grid)</h3>
+    <p>Organized into a 3-coloumn structure.</p>
+  </div>
+  <div class="grid">
+     <img class="i4" src="https://photos.francisfrith.com/frith/waterbeach-the-bridge-hotel-clayhithe-c1960_w509019_large.jpg">
+      <img class="i5" src="https://s3.geograph.org.uk/geophotos/07/75/28/7752895_0bd0d481_1024x1024.jpg">
+      <img class="i6" src="https://s2.geograph.org.uk/geophotos/07/70/26/7702622_a54deea8_1024x1024.jpg">
+       <img class="i7" src="https://photos.francisfrith.com/frith/waterbeach-the-bridge-hotel-clayhithe-c1960_w509019_large.jpg">
+      <img class="i8" src="https://s3.geograph.org.uk/geophotos/07/75/28/7752895_0bd0d481_1024x1024.jpg">
+      <img class="i9" src="https://s2.geograph.org.uk/geophotos/07/70/26/7702622_a54deea8_1024x1024.jpg">
+  </div>
+  </div>
+</body>
+</html>
