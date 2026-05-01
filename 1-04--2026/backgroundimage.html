@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .box {
+  position: relative;
+  height: 300px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url("https://images.pexels.com/photos/247478/pexels-photo-247478.jpeg?cs=srgb&dl=clouds-cloudy-conifers-247478.jpg&fm=jpg");
+}
+.box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: black;
+  opacity: 0.6;
+  transition: opacity 3s
+}
+.box:hover::before{
+  opacity: 0.2;
+  cursor: pointer;
+}
+</style>
+<body>
+  <div class="box">
+  <h1>Hello Welcome</h1>
+  <p>Background image</p>
+</div>
+</body>
+</html>
