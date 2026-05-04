@@ -1,0 +1,471 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: 'Playfair Display', sans-serif;
+}
+
+.hero{
+  height:100vh;
+  background:url("https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/slider-background.jpg") center;
+  position:relative;
+}
+
+.hero > *{
+  position:relative;
+  
+}
+
+.navbar{
+  position:absolute;
+  top:20px;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 50px;
+  color:white;
+}
+
+.logo{
+  height:40px;
+  filter: brightness(0) invert(1);
+}
+
+.nav-links{
+  display:flex;
+  gap:40px;
+}
+
+.hbtn{
+  color:white;
+  letter-spacing:2px;
+  font-size:14px;
+}
+.tbtn{
+  color:white;
+  letter-spacing:2px;
+  font-size:14px;
+  text-decoration: none;
+}
+.tbtn:hover{
+  text-decoration: underline;
+}
+.abtn{
+  color:white;
+  letter-spacing:2px;
+  font-size:14px;
+   text-decoration: none;
+}
+.abtn:hover{
+   text-decoration: underline;
+}
+.cbtn{
+  color:white;
+  letter-spacing:2px;
+  font-size:14px;
+   text-decoration: none;
+}
+.cbtn:hover{
+   text-decoration: underline;
+}
+.social-icons{
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons i{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #F1C27D;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.social-icons i:hover{
+  background: black;
+  color: white;
+}
+
+.hero-center{
+  position:absolute;
+  top:-200px;
+  left:50%;
+  transform:translateX(-90%);
+  animation:slideDown 1.5s ease-out forwards;
+}
+
+@keyframes slideDown{
+  from{ top:-200px; opacity:0; }
+  to{ top:100px; opacity:1; }
+}
+
+.shape-left,
+.shape-right,
+.shape-small1,
+.shape-small2{
+  position:absolute;
+  top:-150px;
+  opacity:0;
+}
+
+.shape-left{
+  left:1%;
+  margin-top:400px;
+  width:150px;
+  animation:fallLeft 2s forwards;
+}
+
+.shape-right{
+  right:10%;
+  width:90px;
+  margin-top:100px;
+  animation:fallRight 2.2s forwards;
+}
+
+.shape-small1{
+  left:90%;
+  width:60px;
+  animation:fallCenter 2s forwards;
+}
+
+.shape-small2{
+  left:85%;
+  width:60px;
+  animation:fallSeed 2.3s forwards;
+}
+
+@keyframes fallLeft{
+  to{ top:120px; opacity:1; transform:rotate(0); }
+}
+
+@keyframes fallRight{
+  to{ top:150px; opacity:1; transform:rotate(10deg); }
+}
+
+@keyframes fallCenter{
+  to{ top:200px; opacity:1; transform:rotate(20deg); }
+}
+
+@keyframes fallSeed{
+  to{ top:170px; opacity:1; transform:rotate(15deg); }
+}
+
+.about{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:80px;
+  padding:80px 50px;
+  background:#f8f6f2;
+}
+
+.about-img{
+  width:350px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.about-content{
+  max-width:400px;
+}
+
+.about-title{
+  font-size:60px;
+  font-style:italic;
+  margin-bottom:20px;
+}
+
+.about-text{
+  color:#565656;
+  line-height:28px;
+}
+
+.btn{
+  margin-top:20px;
+  padding:12px 30px;
+  border:1px solid #333;
+  cursor:pointer;
+  transition:0.3s;
+  margin-left:100px;
+}
+
+.btn:hover{
+  background:#000;
+  color:#fff;
+}
+
+.section-3{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  padding:50px;
+}
+
+.card{
+  position:relative;
+  
+}
+.card img{
+  width:400px;
+  height:400px;
+  object-fit:cover;
+}
+.card h2{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  color:white;
+  font-size:24px;
+  font-family:'Playfair' sans-serif;
+  font-weight:bold;
+  letter-spacing:2px;
+  opacity:0;
+}
+.card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  opacity:0;
+  transition:0.4s;
+  background:rgba(0,0,0,0.5);
+}
+.card:hover h2{
+  opacity:1;
+}
+.card:hover::before{
+  opacity:1;
+}
+.icons-chocolate {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 5%;
+  text-align: center;
+  gap: 30px;
+}
+
+.icon-box {
+  max-width: 220px;
+}
+
+.icon-box img {
+  width: 300px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.icon-box h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-left: 50px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+.icon-box p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  padding-left: 40px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+.video-stats {
+  background: url("https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/video-background.jpg") center;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+}
+
+.video-stats:hover{
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.video-container {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding-top: 56.25%; 
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.review-head{
+  font-size: 200;
+}
+
+.reviews{
+  background: url("https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/testimonials-background.png?id=74") center;
+  padding: 100px;
+}
+
+.contact-card{
+  width:80%;
+  max-width:1000px;
+  margin:-150px auto 0;
+  background:#fff;
+  padding:50px;
+  display:flex;
+  justify-content:space-between;
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+  position:relative;
+  z-index:10;
+}
+
+.contact-left{
+  width:50%;
+}
+
+.contact-left input,
+.contact-left textarea{
+  width:100%;
+  border:none;
+  border-bottom:1px solid #aaa;
+  margin-bottom:25px;
+  padding:10px 5px;
+  background:transparent;
+  outline:none;
+  font-size:14px;
+}
+
+.contact-left textarea{
+  height:80px;
+  resize:none;
+}
+
+.contact-left input:focus,
+.contact-left textarea:focus{
+  border-bottom:2px solid black;
+}
+
+.contact-left button{
+  padding:10px 30px;
+  border:1px solid #333;
+  background:transparent;
+  cursor:pointer;
+  transition:0.3s;
+  margin-left: 200px;
+}
+
+.contact-left button:hover{
+  background:black;
+  color:white;
+}
+
+.contact-right{
+  width:40%;
+}
+
+.contact-right h2{
+  font-size:30px;
+  margin-bottom:15px;
+  margin-left: 90px;
+}
+
+.contact-right strong{
+  font-style:italic;
+}
+
+.contact-right p{
+  color:#565656;
+  font-size:16px;
+  line-height:1.6;
+  font-style: italic;
+  text-align: center;
+}
+
+.galaxy{
+  background: url("https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/background-img-2.jpg") center;
+  height: 400px;
+}
+
+.creamy-chocolate{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 50px;
+}
+
+.grid-item img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+.grid-item img:hover{
+  background-color:rgb(85, 55, 10);
+  opacity: 0.5;
+}
+.foot-img{
+  position: relative;
+  background: url("https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/footer-img.jpg");
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+}
+
+.foot-img::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.foot-img > *{
+  position: relative;
+  z-index: 1;
+}
+
+.footer-logo{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.footer-text{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.footer-icons{
+  display: flex;
+  gap: 15px;
+}
+
+.footer-icons i{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #F1C27D;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer-icons i:hover{
+  background: black;
+  color: white;
+}

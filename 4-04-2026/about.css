@@ -1,0 +1,273 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: 'Playfair Display', sans-serif;
+}
+
+.hero{
+  height:600px;
+  background:url("https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/title-area-team.jpg") center;
+  position:relative;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.4);
+}
+
+.hero > *{
+  position:relative;
+  z-index:1;
+}
+
+.navbar{
+  position:absolute;
+  top:20px;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 50px;
+  color:white;
+}
+
+.logo{
+  height:40px;
+  filter: brightness(0) invert(1);
+}
+
+.nav-links{
+  display:flex;
+  gap:40px;
+  font-family: 'Playfair',sans-serif;
+}
+
+.hbtn{
+  color:white;
+  letter-spacing:2px;
+  font-size:14px;
+  text-decoration: none;
+}
+.tbtn{
+  color:white;
+  letter-spacing:2px;
+  font-size:14px;
+  text-decoration: none;
+}
+.tbtn:hover{
+  text-decoration: underline;
+}
+.abtn{
+  color:white;
+  letter-spacing:2px;
+  font-size:14px;
+}
+.cbtn{
+  color:white;
+  letter-spacing:2px;
+  font-size:14px;
+   text-decoration: none;
+}
+.cbtn:hover{
+   text-decoration: underline;
+}
+.social-icons{
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons i{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #F1C27D;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.social-icons i:hover{
+  background: black;
+  color: white;
+}
+.shape-left{
+  left:1%;
+  margin-top:400px;
+  width:150px;
+}
+
+.text-card{
+  position:absolute;
+  top:55%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  color:white;
+  font-size:60px;
+  font-family: 'Playfair Display', serif;
+  font-weight:400;
+}
+
+.about{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:80px;
+  padding:80px 50px;
+  background:#f8f6f2;
+  flex-wrap:wrap;
+}
+
+.about-img{
+  width:350px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.about-content{
+  max-width:400px;
+}
+
+.about-title{
+  font-size:60px;
+  font-style:italic;
+  margin-bottom:20px;
+}
+
+.about-text{
+  color:#565656;
+  line-height:28px;
+  text-align: center;
+}
+
+.btn{
+  margin-top:20px;
+  padding:12px 30px;
+  border:1px solid #333;
+  background:transparent;
+  cursor:pointer;
+  transition:0.3s;
+  margin-left: 100px;
+}
+
+.btn:hover{
+  background:#000;
+  color:#fff;
+}
+
+.section-3{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  padding:50px;
+}
+
+.card{
+  position:relative;
+  overflow:hidden;
+}
+.card img{
+  width:400px;
+  height:400px;
+  object-fit:cover;
+}
+.card h2{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  color:white;
+  font-size:24px;
+  font-family:'Times New Roman', Times, serif;
+  font-weight:bold;
+  letter-spacing:2px;
+  opacity:0;
+}
+.card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.4);
+  opacity:0;
+  transition:0.4s;
+}
+.card:hover h2{
+  opacity:1;
+}
+.card:hover::before{
+  opacity:1;
+}
+
+.review-head{
+  font-size: 200;
+}
+
+.reviews{
+  background: url("https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/testimonials-background.png?id=74") center;
+  padding: 100px;
+}
+
+.foot-img{
+  position: relative;
+  background: url("https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/footer-img.jpg") center;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+}
+
+.foot-img::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.foot-img > *{
+  position: relative;
+  z-index: 1;
+}
+
+.footer-logo{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.footer-text{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.footer-icons{
+  display: flex;
+  gap: 15px;
+}
+
+.footer-icons i{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #F1C27D;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer-icons i:hover{
+  background: black;
+  color: white;
+}
+
