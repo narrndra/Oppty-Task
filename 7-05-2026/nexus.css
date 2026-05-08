@@ -5,7 +5,7 @@
 }
 
 body{
-  font-family:'Playfair Display', sans-serif;
+  font-family:'Times New Roman', Times, serif;
 }
 
 .marquee-section{
@@ -37,7 +37,6 @@ a{
   display:flex;
   box-shadow: 0px 0px 2px;
   border-radius: 10px;
-  padding-bottom: -10px;
 }
 
 .logo{
@@ -99,8 +98,7 @@ nav a{
   border-radius:25px;
   margin-right:400px;
   margin-top:100px;
-  object-fit:cover;
-  transform:rotate(-3deg);
+  transform:rotate(-5deg);
   border:2px solid rgba(255,255,255,0.3);
 }
 
@@ -110,7 +108,7 @@ nav a{
   height:380px;
   border-radius:25px;
   border:2px solid rgba(255,255,255,0.3);
-  top:-20px;
+  top:-10px;
   left:120px;
   transform:rotate(4deg);
   background:rgba(255,255,255,0.05);
@@ -433,51 +431,45 @@ nav a{
 }
 .gallery{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-  max-width:700px;
-  margin:auto;
-}
-
-.gallery img{
-  width:100%;
-  height:220px;
-  object-fit:cover;
-  border-radius:15px;
-}
-
-.gallery{
-  display:flex;
-  flex-wrap:wrap;
+  grid-template-columns: 1fr 1fr;
   gap:15px;
   width:700px;
   margin:auto;
 }
 
-.gallery img{
+.box{
   width:330px;
   height:220px;
   border-radius:10px;
-  object-fit:cover;
+  overflow:hidden;
+}
+
+.box img{
+  width:100%;
+  height:100%;
+  transition:0.4s;
+}
+
+.box img:hover{
+  transform:scale(1.1);
 }
 
 .footer{
   background:black;
   color:white;
+  clip-path: polygon(0 9%,100% 0,100% 90%, 0 100%);
   padding:60px 8%;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:'Times New Roman', Times, serif
 }
 
 .footer-container{
   display:flex;
   justify-content:space-between;
-  flex-wrap:wrap;
   gap:40px;
 }
 
 .footer-box{
   min-width:200px;
-  flex:1;
 }
 
 .logo{
@@ -489,6 +481,7 @@ nav a{
   color:#bdbdbd;
   line-height:28px;
   font-size:14px;
+  margin-left: 40px;
 }
 
 .footer-box h3{
@@ -497,7 +490,7 @@ nav a{
 }
 
 .footer-box a{
-  display:block;
+  display:flex;
   color:#bdbdbd;
   text-decoration:none;
   margin-bottom:12px;
@@ -512,6 +505,7 @@ nav a{
   margin-top:20px;
   display:flex;
   gap:15px;
+  margin-left: 20px;
 }
 
 .social-icons i{
@@ -553,7 +547,6 @@ nav a{
   padding-top:20px;
   display:flex;
   justify-content:space-between;
-  flex-wrap:wrap;
   gap:20px;
 }
 
