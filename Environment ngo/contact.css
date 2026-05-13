@@ -1,0 +1,305 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: "Work Sans",sans-serif;
+}
+
+.head-section{
+  display:flex;
+  background: url("https://static.vecteezy.com/system/resources/thumbnails/054/880/166/small_2x/thriving-tree-in-lush-green-environment-nature-conservation-and-protection-concept-free-photo.jpeg");
+}
+.head-section img{
+  padding-left: 150px;
+  padding-top: 20px;
+}
+nav a{
+  margin-left: 50px;
+  font-family:"Work Sans",sans-serif;
+  color:#383A3D;
+  font: 13px;
+}
+.a2{
+  text-decoration: none;
+}
+.a1{
+  text-decoration: none;
+}
+.a3{
+  text-decoration: none;
+}
+.a4{
+  color: greenyellow;
+}
+.a5{
+  text-decoration: none; 
+}
+.a1:hover{
+  opacity: 0.6;
+  color: blue;
+}
+.a2:hover{
+  opacity: 0.6;
+  color: blue;
+  text-decoration: underline;
+}
+.a3:hover{
+  opacity: 0.6;
+  color: blue;
+  text-decoration: underline;
+}
+.a4:hover{
+  opacity: 0.6;
+  color: blue;
+  text-decoration: underline;
+}
+.a5:hover{
+  opacity: 0.6;
+  color: blue;
+  text-decoration: underline;
+}
+.nav-links{
+  margin-left: 30%;
+  margin-top: 20px;
+}
+.head-icons{
+  display: flex;
+  margin-left: 50px;
+  margin-top: 20px;
+  gap:32px;
+}
+
+.fa-brands.fa-facebook-f:hover{
+  cursor: pointer;
+  color: blue;
+}
+
+.fa-brands.fa-twitter:hover{
+  cursor: pointer;
+  color: blue;
+}
+
+.fa-brands.fa-instagram:hover{
+  cursor: pointer;
+  color:blue;
+}
+
+.back{
+  width:90%;
+  height:80vh;
+  margin-left: 90px;
+  background-image:url("https://bridge296.qodeinteractive.com/wp-content/uploads/2019/12/contact-img-1.jpg");
+  margin-top: 20px;
+  background-size:cover;
+  display:flex;
+  justify-content:center;  
+  align-items:center;   
+  flex-direction:column;    
+}
+.h1-sec{
+  margin-bottom:20px;
+  color:white;
+  font-size:80px;
+  text-align:center;
+}
+
+.p-sec{
+  color:white;
+  font-size:20px;
+  text-align:center;
+}
+
+.div-section{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  padding:60px 40px;
+  background:#f8f8f8;
+}
+
+.div1,
+.div2,
+.div3{
+  width:350px;
+  background:#fff;
+  padding:35px;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+  transition:0.4s;
+}
+
+.div1 h4,
+.div2 h4,
+.div3 h4{
+  font-size:25px;
+  margin-bottom:20px;
+  color: #131313;
+  font-family: "Work Sans",sans-serif;
+}
+
+.div1 p,
+.div2 p,
+.div3 p{
+  font-size:15px;
+  line-height:1.7;
+  color:#131313;
+  margin-bottom:25px;
+  font-family: "Work Sans",sans-serif;
+}
+
+.div1 a,
+.div2 a,
+.div3 a{
+  text-decoration:none;
+  color:#6b8e23;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.div1 a:hover{
+  opacity: 0.6;
+}
+.div2 a:hover{
+  opacity: 0.6;
+}
+.div3
+  a:hover{
+  opacity: 0.6;
+}
+.div1:hover{
+  transform:translateY(-10px);
+  cursor: pointer;
+}
+.div2:hover{
+  transform:translateY(-10px);
+  cursor: pointer;
+}
+.div3:hover{
+  transform:translateY(-10px);
+  cursor: pointer;
+}
+
+.form-boxes{
+  text-align: center;
+}
+.form-boxes h4{
+  color: grey;
+  margin-top: 20px;
+}
+.form-box{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form-box input{
+  width: 40%;
+  padding: 20px;
+  margin: 10px;
+  border: none;
+  background-color: #f3f7f7;
+  font-size: 16px;
+}
+
+.form-box textarea{
+  width: 83%;
+  height: 200px;
+  padding: 20px;
+  margin-top: 10px;
+  border: none;
+  background-color: #f3f7f7;
+  font-size: 16px;
+}
+
+.form-box button{
+  margin-top: 30px;
+  padding: 18px 60px;
+  border: none;
+  background-color: #7ac143;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.form-box button:hover{
+  background-color: #5fa52f;
+}
+
+.small-images{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+
+.footer-section{
+  width:100%;
+  background:#f5f5f5;
+  padding:90px 8% 60px;
+  display:flex;
+  justify-content:space-between;
+  gap:60px;
+  margin-top: 50px;
+}
+
+.footer-logo{
+  width:170px;
+  margin-bottom:30px;
+}
+
+.footer-box p{
+  font-size:18px;
+  line-height:1.9;
+  color:#666;
+  max-width:320px;
+  margin-bottom:35px;
+}
+
+.social-icons{
+  display:flex;
+  gap:22px;
+}
+
+.social-icons i{
+  font-size:20px;
+  color:#222;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.social-icons i:hover{
+  color:#7ac943;
+}
+
+.footer-box h2{
+  font-size:26px;
+  color:#222;
+  margin-bottom:35px;
+  font-weight:600;
+}
+
+.footer-box ul li{
+  margin-bottom:22px;
+}
+
+.footer-box ul li a{
+  text-decoration:none;
+  color:#444;
+  font-size:18px;
+  transition:0.3s;
+}
+
+.map-img{
+  width:100%;
+  max-width:300px;
+}
+
+.copyright{
+  text-align:center;
+  background:#f5f5f5;
+  padding-bottom:30px;
+  color:#999;
+  font-size:18px;
+}

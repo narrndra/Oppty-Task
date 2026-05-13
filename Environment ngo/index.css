@@ -1,0 +1,505 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: "Work Sans",sans-serif;
+}
+
+.head-section{
+  display:flex;
+  background: url("https://static.vecteezy.com/system/resources/thumbnails/054/880/166/small_2x/thriving-tree-in-lush-green-environment-nature-conservation-and-protection-concept-free-photo.jpeg");
+}
+.head-section img{
+  padding-left: 150px;
+  padding-top: 20px;
+}
+nav a{
+  margin-left: 50px;
+  font-family:"Work Sans",sans-serif;
+  color:#383A3D;
+  font: 13px;
+}
+.a1{
+  color:greenyellow;
+}
+.a2{
+  text-decoration: none;
+}
+.a3{
+  text-decoration: none;
+}
+.a4{
+  text-decoration: none;
+}
+.a5{
+  text-decoration: none; 
+}
+.a1:hover{
+  opacity: 0.6;
+  color: blue;
+}
+.a2:hover{
+  opacity: 0.6;
+  color: blue;
+  text-decoration: underline;
+}
+.a3:hover{
+  opacity: 0.6;
+  color: blue;
+}
+.a4:hover{
+  opacity: 0.6;
+  color: blue;
+  text-decoration: underline;
+}
+.a5:hover{
+  opacity: 0.6;
+  color: blue;
+  text-decoration: underline;
+}
+.nav-links{
+  margin-left: 30%;
+  margin-top: 20px;
+}
+.head-icons{
+  display: flex;
+  margin-left: 50px;
+  margin-top: 20px;
+  gap:32px;
+}
+
+.fa-brands.fa-facebook-f:hover{
+  cursor: pointer;
+  color: blue;
+}
+
+.fa-brands.fa-twitter:hover{
+  cursor: pointer;
+  color: blue;
+}
+
+.fa-brands.fa-instagram:hover{
+  cursor: pointer;
+  color:blue;
+}
+
+.hero-section{
+  text-align: center;
+  margin-top: 59px;
+  font-family: "Work Sans",sans-serif;
+}
+.hero-section h1{
+  width: 27%;
+  margin-left: 35%;
+  font:30px;
+  margin-top: 20px;
+  color:#131313;
+}
+.hero-section h3{
+  font-family: "Work Sans",sans-serif;
+  font: 18px;
+  color: #8cc640;
+}
+.btn{
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #8cc640;
+  color: white;
+  font:14px;
+  font-weight: bold;
+  border:solid;
+}
+.btn:hover{
+  opacity: 0.4;
+  cursor: pointer;
+}
+.img1{
+  width: 100%;
+  margin-left: 50px;
+}
+
+.div-section{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  padding:60px 40px;
+  background:#f8f8f8;
+}
+
+.div1,
+.div2,
+.div3{
+  width:350px;
+  background:#fff;
+  padding:35px;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+  transition:0.4s;
+}
+
+.div1 h4,
+.div2 h4,
+.div3 h4{
+  font-size:25px;
+  margin-bottom:20px;
+  color: #131313;
+  font-family: "Work Sans",sans-serif;
+}
+
+.div1 p,
+.div2 p,
+.div3 p{
+  font-size:15px;
+  line-height:1.7;
+  color:#131313;
+  margin-bottom:25px;
+  font-family: "Work Sans",sans-serif;
+}
+
+.div1 a,
+.div2 a,
+.div3 a{
+  text-decoration:none;
+  color:#6b8e23;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.div1 a:hover{
+  opacity: 0.6;
+}
+.div2 a:hover{
+  opacity: 0.6;
+}
+.div3
+  a:hover{
+  opacity: 0.6;
+}
+.div1:hover{
+  transform:translateY(-10px);
+  cursor: pointer;
+}
+.div2:hover{
+  transform:translateY(-10px);
+  cursor: pointer;
+}
+.div3:hover{
+  transform:translateY(-10px);
+  cursor: pointer;
+}
+
+.img-section{
+  display: flex;
+}
+.img-section h3{
+  color: #131313;
+  font-size:37px;
+  font-family: "Work Sans"sans-serif;
+  width: 80%;
+  margin-left: 90px;
+}
+.img-section p{
+  color: #3d3c3c;
+  font-size: 18px;
+  font-family: "Work Sans"sans-serif;
+  margin-left: 90px;
+  margin-top: 20px;
+  width: 50%;
+  line-height: 30px;
+  letter-spacing:2px;
+}
+
+.progress-section{
+  width:80%;
+  margin:60px auto;
+}
+
+.progress-box{
+  margin-bottom:50px;
+}
+
+.title{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:15px;
+}
+
+.title h2{
+  font-size:18px;
+  font-weight:600;
+}
+
+.title span{
+  font-size:18px;
+  font-weight:bold;
+}
+
+.progress-bar{
+  width:100%;
+  height:8px;
+  background:#e5e5d0;
+  overflow:hidden;
+}
+
+.progress-fill{
+  height:100%;
+}
+
+.green{
+  width:75%;
+  background:#6f8f2f;
+  animation:greenbar 2s ease;
+}
+
+.yellow{
+  width:63%;
+  background:#b7b52d;
+  animation:yellowbar 2s ease;
+}
+
+@keyframes greenbar{
+  from{
+    width:0;
+  }
+
+  to{
+    width:75%;
+  }
+}
+
+@keyframes yellowbar{
+  from{
+    width:0;
+  }
+
+  to{
+    width:63%;
+  }
+}
+
+ .fixed-bg{
+   height:100vh;
+   background-image:url("https://bridge296.qodeinteractive.com/wp-content/uploads/2019/12/parallax-img-1.jpg");
+   background-size:cover;
+   background-position:center;
+   background-attachment:fixed;
+   display:flex;
+   align-items:center;
+   justify-content:flex-end;
+   position: relative;
+   padding-right:80px;
+}
+
+.form-box{
+  width:450px;
+  background:#f7f8f2;
+  padding:50px;
+  position: absolute;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.form-box h1{
+  font-size:55px;
+  font-weight:300;
+  color:#444;
+  text-align:center;
+  margin-bottom:10px;
+}
+
+.form-box h2{
+  text-align: center;
+}
+.form-box h4{
+  color:#3d3c3c;
+  text-align: center;
+  margin-top: 10px;
+}
+.form-box p{
+  text-align:center;
+  color:#666;
+  font-size:24px;
+  margin-bottom:35px;
+}
+
+.form-box input,
+.form-box textarea{
+  width:100%;
+  padding:22px;
+  margin-bottom:20px;
+  border:none;
+  background:#eef2ea;
+  font-size:20px;
+}
+
+.form-box textarea{
+  height:130px;
+}
+
+.form-box button{
+  width:100%;
+  padding:22px;
+  border:none;
+  background:#7eb63d;
+  color:white;
+  font-size:20px;
+  font-weight:bold;
+  letter-spacing:2px;
+  cursor:pointer;
+  transition:0.4s;
+}
+
+.form-box button:hover{
+  background:#5e9226;
+  transform:translateY(-3px);
+}
+
+.join-section h2{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.join-section{
+  margin-top: 40px;
+}
+.join-section h2{
+  margin-top: 20px;
+}
+
+.images-section{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  padding:80px 100px;
+  text-align:center;
+  background:#fff;
+}
+
+.image-1,
+.image-2,
+.image-3{
+  width:320px;
+}
+
+.image-1 img,
+.image-2 img,
+.image-3 img{
+  width:100%;
+  max-width:220px;
+  margin-bottom:30px;
+}
+
+.image-1 h3,
+.image-2 h3,
+.image-3 h3{
+  font-size:28px;
+  font-weight:400;
+  color:#111;
+  margin-bottom:20px;
+  line-height:1.2;
+}
+
+.image-1 p,
+.image-2 p,
+.image-3 p{
+  font-size:18px;
+  color:#666;
+  line-height:1.8;
+  margin-bottom:30px;
+}
+
+.image-1 a,
+.image-2 a,
+.image-3 a{
+  text-decoration:none;
+  color:yellowgreen;
+  font-size:14px;
+  letter-spacing:3px;
+  font-weight:600;
+}
+.image-1 a:hover{
+  opacity: 0.6;
+}
+.image-2 a:hover{
+  opacity: 0.6;
+}
+.image-3 a:hover{
+  opacity: 0.6;
+}
+
+.small-images{
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section{
+  width:100%;
+  background:#f5f5f5;
+  padding:90px 8% 60px;
+  display:flex;
+  justify-content:space-between;
+  gap:60px;
+}
+
+.footer-logo{
+  width:170px;
+  margin-bottom:30px;
+}
+
+.footer-box p{
+  font-size:18px;
+  line-height:1.9;
+  color:#666;
+  max-width:320px;
+  margin-bottom:35px;
+}
+
+.social-icons{
+  display:flex;
+  gap:22px;
+}
+
+.social-icons i{
+  font-size:20px;
+  color:#222;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.social-icons i:hover{
+  color:#7ac943;
+}
+
+.footer-box h2{
+  font-size:26px;
+  color:#222;
+  margin-bottom:35px;
+  font-weight:600;
+}
+
+.footer-box ul li{
+  margin-bottom:22px;
+}
+
+.footer-box ul li a{
+  text-decoration:none;
+  color:#444;
+  font-size:18px;
+  transition:0.3s;
+}
+
+.map-img{
+  width:100%;
+  max-width:300px;
+}
+
+.copyright{
+  text-align:center;
+  background:#f5f5f5;
+  padding-bottom:30px;
+  color:#999;
+  font-size:18px;
+}
