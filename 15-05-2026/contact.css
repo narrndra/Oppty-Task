@@ -113,7 +113,6 @@ header{
 
   nav a{
     font-size:12px;
-    letter-spacing:1px;
   }
 
 }
@@ -915,7 +914,6 @@ nav a:hover{
   .copy{
     margin-top:60px;
     font-size:14px;
-    letter-spacing:1px;
   }
 
 }
@@ -956,8 +954,6 @@ nav a:hover{
   .copy{
     margin-top:40px;
     font-size:12px;
-    line-height:1.6;
-    letter-spacing:1px;
   }
 
 }

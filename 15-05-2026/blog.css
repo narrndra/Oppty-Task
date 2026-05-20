@@ -12,7 +12,6 @@ header{
   width:100%;
   height:72vh;
   position:relative;
-  overflow:hidden;
   display: flex;
 }
 
@@ -201,7 +200,6 @@ nav a:hover{
   display:flex;
   gap:20px;
   justify-content:center;
-  flex-wrap:wrap;
 }
 
 .about-text h1 span{
@@ -440,7 +438,7 @@ nav a:hover{
   color: #EF6210;
   margin-top: 20px;
   font-size: 14px;
-  font-family: "Dosis", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
 
@@ -498,7 +496,6 @@ nav a:hover{
   .d2 h5,
   .d3 h5{
     font-size:15px;
-    line-height:1.7;
   }
 
 }
@@ -728,6 +725,222 @@ button:hover{
 
 }
 
+.cards{
+  display:flex;
+  gap:25px;
+  justify-content:center;
+  padding:50px 8%;
+}
+
+.card{
+  position:relative;
+  width:260px;
+  height:380px;
+  border-radius:22px;
+  overflow:hidden;
+  cursor:pointer;
+  transition:0.5s;
+  border-radius: 50px;
+  box-shadow:0 10px 25px rgba(14, 161, 149, 0.2);
+  animation:floating 4s ease-in-out infinite;
+}
+
+.card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:0.6s;
+}
+
+.card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to top,
+    rgba(0,0,0,0.9),
+    rgba(0,0,0,0.1)
+  );
+}
+
+.card-content{
+  position:absolute;
+  bottom:25px;
+  left:20px;
+  color:#fff;
+}
+
+.card-content h2{
+  font-size:28px;
+  font-weight:800;
+  margin-bottom:20px;
+}
+
+.card-content h2:hover{
+  text-decoration: underline;
+}
+
+.card:hover{
+  transform:translateY(-12px) scale(1.03);
+}
+
+.card:hover img{
+  transform:scale(1.1);
+}
+
+@keyframes floating{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-20px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+
+}
+
+.cards{
+  display:flex;
+  gap:25px;
+  justify-content:center;
+  padding:50px 8%;
+}
+
+.card{
+  position:relative;
+  width:260px;
+  height:380px;
+  cursor:pointer;
+  transition:0.5s;
+  border-radius:50px;
+  box-shadow:0 10px 25px rgba(14,161,149,0.2);
+  animation:floating 4s ease-in-out infinite;
+}
+
+.card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:0.6s;
+}
+
+.card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to top,
+    rgba(0,0,0,0.9),
+    rgba(0,0,0,0.1)
+  );
+}
+
+.card-content{
+  position:absolute;
+  bottom:25px;
+  left:20px;
+  z-index:2;
+  color:#fff;
+}
+
+.card-content h2{
+  font-size:28px;
+  font-weight:800;
+  margin-bottom:20px;
+}
+
+.card-content h2:hover{
+  text-decoration:underline;
+}
+
+.card:hover{
+  transform:translateY(-12px) scale(1.03);
+}
+
+.card:hover img{
+  transform:scale(1.1);
+}
+
+@keyframes floating{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-20px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+
+}
+
+@media(max-width:992px){
+
+  .cards{
+    gap:20px;
+    padding:40px 5%;
+  }
+
+  .card{
+    width:45%;
+    height:340px;
+    border-radius:35px;
+  }
+
+  .card-content h2{
+    font-size:24px;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .cards{
+    flex-direction:column;
+    align-items:center;
+    gap:25px;
+    padding:30px 5%;
+  }
+
+  .card{
+    width:100%;
+    max-width:320px;
+    height:420px;
+    border-radius:30px;
+  }
+
+  .card-content{
+    bottom:20px;
+    left:18px;
+  }
+
+  .card-content h2{
+    font-size:22px;
+    margin-bottom:15px;
+  }
+
+}
+
+@media(max-width:480px){
+
+  .card{
+    height:360px;
+  }
+
+  .card-content h2{
+    font-size:20px;
+  }
+
+}
+
 .footer-sec{
   width:100%;
   padding:100px 8% 40px;
@@ -798,7 +1011,6 @@ button:hover{
   margin-top:90px;
   font-size:15px;
   font-weight:700;
-  letter-spacing:2px;
 }
 
 @media screen and (max-width:1024px){
