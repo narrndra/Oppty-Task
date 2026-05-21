@@ -450,12 +450,10 @@ nav a:hover{
 @keyframes fadeSlide{
   0%{
     opacity:0;
-    filter:blur(8px);
     transform:translateX(-80px);
   }
   100%{
     opacity:1;
-    filter:blur(0);
     transform:translateX(0);
   }
 }
@@ -856,7 +854,6 @@ nav a:hover{
   .dimag{
     gap:20px;
     justify-content:center;
-    flex-wrap:wrap;
   }
 
   .dimag1{
