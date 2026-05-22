@@ -36,13 +36,6 @@ header{
   height: 10%;
 }
 
-.menu-btn{
-  display:none;
-  color:white;
-  font-size:30px;
-  cursor:pointer;
-}
-
 @media screen and (max-width:1024px){
 
   .head-sec{

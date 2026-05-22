@@ -69,14 +69,6 @@ header{
     gap:20px;
   }
 
-  .menu-btn{
-    display:block;
-    position:absolute;
-    top:30px;
-    right:20px;
-    z-index:100;
-  }
-
   nav{
     position:absolute;
     top:90px;

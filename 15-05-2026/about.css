@@ -33,13 +33,6 @@ header{
   height: 10%;
 }
 
-.menu-btn{
-  display:none;
-  color:white;
-  font-size:30px;
-  cursor:pointer;
-}
-
 @media screen and (max-width:1024px){
 
   .head-sec{
@@ -64,13 +57,6 @@ header{
     align-items:center;
     gap:20px;
     padding:25px 20px;
-  }
-
-  .menu-btn{
-    display:block;
-    position:absolute;
-    top:30px;
-    right:20px;
   }
 
   nav{
@@ -98,12 +84,6 @@ header{
 
   .head-sec{
     padding:20px 15px;
-  }
-
-  .menu-btn{
-    top:25px;
-    right:15px;
-    font-size:28px;
   }
 
   nav{
@@ -382,7 +362,6 @@ nav a:hover{
   padding-left:50px;
   font-weight:bold;
   margin-left:80px;
-  animation:listFloat 2s 1s forwards;
 }
 
 .sect1 li{
@@ -400,6 +379,8 @@ nav a:hover{
   height:100%;
   width:90%;
   animation:imageFloat 5s infinite ease-in-out;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px greenyellow;
 }
 
 .imgd1{
@@ -407,6 +388,8 @@ nav a:hover{
   width:90%;
   margin-left:-400px;
   animation:imageRotate 6s infinite ease-in-out;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px gold;
 }
 
 .d1{
@@ -422,15 +405,6 @@ nav a:hover{
   100%{
     opacity:1;
     transform:scale(1);
-  }
-}
-
-@keyframes glowMove{
-  0%{
-    transform:translate(0,0) scale(1);
-  }
-  100%{
-    transform:translate(120px,80px) scale(1.3);
   }
 }
 
@@ -457,21 +431,6 @@ nav a:hover{
     transform:translateX(0);
   }
 }
-
-@keyframes listFloat{
-  0%{
-    opacity:0;
-    transform:translateY(80px);
-  }
-  50%{
-    transform:translateY(-10px);
-  }
-  100%{
-    opacity:1;
-    transform:translateY(0);
-  }
-}
-
 @keyframes imageFloat{
   0%{
     transform:translateY(0) rotate(0deg);
@@ -551,7 +510,6 @@ nav a:hover{
   }
 
   .sect1 ul{
-    margin-left:0;
     padding-left:30px;
   }
 
@@ -887,7 +845,6 @@ nav a:hover{
   }
 
   .dimag{
-    flex-wrap:wrap;
     justify-content:center;
     gap:30px;
     margin-top:30px;
