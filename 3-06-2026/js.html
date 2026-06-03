@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Conditions</title>
+</head>
+<body>
+
+  <h1 id="changeHead">Welcome to JS</h1>
+
+
+  <script>
+
+    let result = "";
+
+    let a1 = "Narendra";
+    result += a1 + "<br>";
+
+    let a2 = 123;
+    result += a2.toString() + "<br>";
+
+    let a3 = ["Apple", "Banana", "Guava", "Custard Apple", "Pineapple"];
+    result += a3.toString() + "<br>";
+
+    // Change heading
+    document.getElementById("changeHead").innerHTML =
+      a1 + " " + a2;
+
+    // if condition
+    let age = 18;
+
+    if (age >= 18) {
+      result += "You are eligible to vote<br>";
+    }
+
+    // if else
+    let number = 5;
+
+    if (number % 2 === 0) {
+      result += "Even Number<br>";
+    } else {
+      result += "Odd Number<br>";
+    }
+
+    // else if
+    let marks = 75;
+
+    if (marks >= 90) {
+      result += "Grade A<br>";
+    } else if (marks >= 70) {
+      result += "Grade B<br>";
+    } else if (marks >= 50) {
+      result += "Grade C<br>";
+    } else {
+      result += "Fail<br>";
+    }
+
+    // switch
+    let day = 3;
+
+    switch (day) {
+      case 1:
+        result += "Monday";
+        break;
+
+      case 2:
+        result += "Tuesday";
+        break;
+
+      case 3:
+        result += "Wednesday";
+        break;
+
+      default:
+        result += "Invalid Day";
+    }
+
+    document.getElementById("changeHead").innerHTML = result;
+
+  </script>
+
+</body>
+</html>
