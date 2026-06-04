@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>Hi Welcome to JS</p>
+  <input id="age" value="18">
+  <button onclick="checkAge()">Click Me</button>
+
+  <script>
+    function checkAge(){
+      let x = document.getElementById("age").innerHTML;
+      if(x>=18){
+        console.log("Eligible to vote");
+      }
+      else{
+        console.log("Not eligible");
+      }
+    }
+  </script>
+</body>
+</html>
