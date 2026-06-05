@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: 'Times New Roman', Times, serif;
+        font-family: cursive;
+        background-color: #f4f4f4;
+        text-align: center;
+      }
+
+      .box {
+        background: white;
+        width: 400px;
+        margin-top:200px;
+        margin-left: 35%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 2ppx 2px 40px gray;
+      }
+
+      .box h4:hover{
+        text-shadow: 2px 2px 10px greenyellow;
+        cursor: pointer;
+      }
+
+      input {
+        width: 80%;
+        padding: 10px;
+        margin: 10px;
+        font-size: 16px;
+        border-radius: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h4>Student Marks Calculate with Grade</h4>
+      <input type="text" id="name" placeholder="Enter your name" />
+      <input
+        type="number"
+        id="mark"
+        value="subject1"
+        placeholder="Enter your Subject-1 Marks"
+      />
+      <input
+        type="number"
+        id="marks"
+        value="subject2"
+        placeholder="Enter your Subject-2 Marks"
+      />
+      <button onclick="calculate()">Calculate</button>
+
+      <div id="result"></div>
+    </div>
+
+    <script>
+      function calculate() {
+        let x = document.getElementById("name").value;
+        let y = Number(document.getElementById("mark").value);
+        let z = Number(document.getElementById("marks").value);
+
+        let sub1=++y;
+        let sub2=++z;
+
+        let total = y + z;
+
+        let bonus = total;
+        bonus += 5;
+
+        let avg = total / 2;
+
+
+
+        let result = avg >= 35 ? "Pass" : "Fail";
+
+        let grade;
+        if (avg >= 90) grade = "A";
+        else if (avg >= 75 && avg <= 89) grade = "B";
+        else if (avg >= 60 && avg <= 74) grade = "C";
+        else if (avg >= 35 && avg <= 59) grade = "D";
+        else grade = "Fail";
+
+        document.getElementById("result").innerHTML =
+          "Student Name : " +
+          x +
+          "<br><br>" +
+          "Subject-1 Marks : " +
+          y +
+          "<br><br>" +
+          "Subject-2 Marks : " +
+          z +
+          "<br><br>" +
+          "Increment by sub1 : " + 
+          sub1 +
+          "<br><br>" +
+          "Increment by sub2 : " + 
+          sub2 +
+          "<br><br>" +
+          "Total Marks : " +
+          total +
+          "<br><br>" +
+          "Avg Marks : " +
+          avg +
+          "<br><br>" +
+          "Bonus : " +
+          bonus +
+          "<br><br>" +
+          "Result : " +
+          result +
+          "<br><br>" +
+          "Grade : " +
+          grade;
+      }
+    </script>
+  </body>
+</html>
