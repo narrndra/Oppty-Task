@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Looping statements</h1>
+
+    <!-- for loop -->
+
+    <script>
+      let n = 10;
+      for (let i = 0; i <= n; i++) {
+        if (i % 2 == 0) {
+          console.log( i + "->" +"Even Number");
+        } else {
+          console.log(i + "->" + "Odd number");
+        }
+      }
+    </script>
+
+    <script>
+      let a = ["Car", "Bus", "Bike", "Cycle"];
+      for (let i = 0; i < a.length; i++) {
+        console.log(a[i]);
+      }
+    </script>
+
+    <!-- while loop -->
+
+    <script>
+      let i = 0;
+      while (i <= 9) {
+        i++;
+        console.log(i);
+      }
+    </script>
+
+    <script>
+      let b = ["Apple", "Banana", "Pineapple", "Guava"];
+      let ind = 0;
+      while (ind < b.length) {
+        console.log(b[ind]);
+        ind++;
+      }
+    </script>
+
+    <!-- do-while loop -->
+
+    <script>
+      let c = 10;
+      do {
+        console.log(c);
+        c++;
+      } while (c <= 9);
+    </script>
+
+    <script>
+      let d = ["hero", "heroine", "villain", "commedian"];
+      let inde = 0;
+      do {
+        console.log(d[inde]);
+        inde++;
+      } while (inde < d.length);
+    </script>
+
+    <!-- for-in loop -->
+
+    <script>
+      let student = {
+        name: "Narendra",
+        age: 21,
+        course: "Java",
+      };
+
+      for (let key in student) {
+        console.log(key + " : " + student[key]);
+      }
+    </script>
+
+    <script>
+      let arr = ["Person1", "Person2"];
+      for (let k in arr) {
+        console.log(k);
+      }
+    </script>
+
+    <!-- for-of loop -->
+
+    <script>
+      let arr1 = ["Person1", "Person2"];
+      for (let k of arr1) {
+        console.log(k);
+      }
+    </script>
+
+    <script>
+      let arr2=["super","duper"];
+      for(let simple of arr2){
+        console.log(simple);
+      }
+    </script>
+
+    <!-- for-each loop -->
+
+    <script>
+      let num=[10,20,50,90];
+      num.forEach(function(n){
+        console.log(n);
+      });
+    </script>
+
+        <script>
+      let arr5=["NTR","Ram","Prashanthneel","Mahesh Babu"];
+      arr5.forEach(function(n){
+        console.log(n);
+      });
+    </script>
+
+  </body>
+</html>
