@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Strings</h1>
+
+    <script>
+      // slice
+
+      let name = "Hi Narendra Welcome to our World";
+      let result = name.slice(0, 5);
+      let res = name.slice(-6,-4);
+      console.log(result);
+      console.log(res);
+
+      let name0 = "Hi Narendra Welcome to our Java World";
+      let result0 = name.slice(9, 14);
+      let res0 = name.slice(-6, -3);
+      console.log(result0);
+      console.log(res0);
+
+      // subString
+
+      let name1 = "Hello Narendra";
+      let result1 = name1.substring(1, 6);
+      console.log(result1);
+
+      let name01 = "Hello Narendra";
+      let result01 = name01.substring(9,1);
+      console.log(result01);
+
+      // replace and replaceAll
+
+      let name2 = "Guru Drawaka Guru";
+      // let result2=name2.replace("Guru", "Narendra");
+      let res1 = name2.replaceAll("Guru", "Narendra");
+      // console.log(result2);
+      console.log(res1);
+
+      let name02 = "Guru Drawaka Guru";
+      // let result02=name2.replace("Guru", "Ram");
+      let res01 = name2.replaceAll("Guru", "Ram");
+      // console.log(result02);
+      console.log(res01);
+
+      // toUpperCase
+
+      let name3 = "Drawaka";
+      let result2 = name3.toUpperCase();
+      console.log(result2);
+
+      let name03 = "Narendra";
+      let result02 = name03.toUpperCase();
+      console.log(result02);
+
+      // toLowerCase
+
+      let name4 = "Drawaka";
+      let result3 = name4.toLowerCase();
+      console.log(result3);
+
+      let name04 = "Narendra";
+      let result03 = name04.toLowerCase();
+      console.log(result03);
+
+      // concat
+
+      let name5 = "Drawaka";
+      let res2 = "Narendra";
+      let result4 = name5.concat(" " + res2);
+      console.log(result4);
+
+      // trim
+
+      let name6 = " Narendra Drawaka";
+      let result5 = name6.trim();
+      console.log(result5);
+
+      let name06 = " Narendra Drawaka Guru ";
+      let result05 = name06.trim();
+      console.log(result05);
+
+      // trimStart
+
+      let nameTrim = " Narendra Drawaka ";
+      let resultTrim = nameTrim.trimStart();
+      console.log(resultTrim);
+
+      let nameTrim0 = " Guru Drawaka";
+      let resultTrim0 = nameTrim0.trimStart();
+      console.log(resultTrim0);
+
+          // trimEnd
+
+      let nameTrim1 = " Narendra Drawaka ";
+      let resultTrim1 = nameTrim1.trimEnd();
+      console.log(resultTrim1);
+
+      let nameTrim2 = "Guru Drawaka Narendra ";
+      let resultTrim2 = nameTrim2.trimEnd();
+      console.log(resultTrim2);
+
+      // charAt
+
+      let name7 = "Drawaka";
+      let result6 = name7.charAt(5);
+      console.log(result6);
+
+      let name07 = "Narendra";
+      let result06 = name07.charAt(4);
+      console.log(result06);
+
+      // split
+
+      let name8 = "Hi^Narendra^Drawaka^Reddy";
+      let result7 = name8.split("^");
+      console.log(result7);
+
+      let name08 = "Hi & Narendra & Drawaka & Reddy";
+      let result07 = name08.split("&");
+      console.log(result07);
+
+      // includes
+
+      let name9 = " Narendra Drawaka";
+      let result8 = name9.includes("Narendra");
+      console.log(result8);
+
+      let name09 = " Narendra Drawaka";
+      let result08 = name09.includes("Reddy");
+      console.log(result08);
+
+      // startsWith
+
+      let name10 = "Drawaka";
+      let result9 = name10.startsWith("D");
+      console.log(result9);
+
+      let name010 = "Drawaka";
+      let result09 = name010.startsWith("k");
+      console.log(result09);
+
+      // endsWith
+
+      let name011 = "Guru Drawaka";
+      let result010 = name011.endsWith("u");
+      console.log(result010);
+
+      let name11 = "Drawaka";
+      let result10 = name11.endsWith("D");
+      console.log(result10);
+
+      // indexOf
+
+      let name12 = "Drawaka";
+      let result11 = name12.indexOf("a");
+      console.log(result11);
+
+      let name012 = "Drawaka";
+      let result011 = name012.indexOf("w");
+      console.log(result011);
+
+      // lastIndexOf
+
+      let name13 = "Drawaka Narendra";
+      let result12 = name13.lastIndexOf("r");
+      console.log(result12);
+
+      let name013 = "Drawaka Narendra";
+      let result012 = name013.lastIndexOf("e");
+      console.log(result012);
+    </script>
+  </body>
+</html>
