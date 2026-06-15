@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>SMART WAREHOUSE MANAGEMENT SYSTEM</h1>
+
+    <script>
+      const products = [
+        {
+          name: "  wireless mouse ",
+          category: "electronics",
+          quantity: 25,
+          price: 799,
+        },
+        {
+          name: "Gaming Keyboard",
+          category: "ELECTRONICS",
+          quantity: 8,
+          price: 2499,
+        },
+        {
+          name: "office chair",
+          category: "furniture",
+          quantity: 3,
+          price: 5999,
+        },
+        {
+          name: "LED Monitor",
+          category: "Electronics",
+          quantity: 15,
+          price: 10999,
+        },
+        {
+          name: "water bottle",
+          category: "home",
+          quantity: 50,
+          price: 299,
+        },
+      ];
+
+      //  CLEAN THE DATA
+
+      let cleanName = products.map(
+        (cp) =>
+          cp.name.trim().charAt(0).toUpperCase() + cp.name.trim().slice(1),
+      );
+      console.log(cleanName);
+
+      let cleanCategory = products.map((cc) => cc.category.toUpperCase());
+      console.log(cleanCategory);
+
+      // CALCULATE INVENTORY VALUE
+
+      for (let i = 0; i < products.length; i++) {
+        let involuntaryValue = products[i].quantity * products[i].price;
+        console.log(products[i].name + "=" + involuntaryValue);
+      }
+
+      // DETERMINE STOCK STATUS
+
+      for (let i = 0; i < products.length; i++) {
+        if (products[i].quantity > 20)
+          console.log(products[i].name + " = High Stock");
+        else if (products[i].quantity >= 10 && products[i].quantity <= 20)
+          console.log(products[i].name + " = Medium Stock");
+        else if (products[i].quantity >= 1 && products[i].quantity <= 9)
+          console.log(products[i].name + " = Low Stock");
+        else console.log(products[i].name + " = Out of Stock");
+      }
+
+      // GENERATE WAREHOUSE STATISTICS
+
+      let totalProducts = products.length;
+      console.log(totalProducts);
+
+      let totalInventuaryValue = products.reduce(
+        (sum, product) => sum + product.quantity * product.price,
+        0,
+      );
+      console.log(totalInventuaryValue);
+
+      let totalPrice = 0;
+      for (let i = 0; i < products.length; i++) {
+        totalPrice = totalPrice + products[i].price;
+      }
+      let avgPrice = totalPrice / products.length;
+      console.log(avgPrice);
+
+      let expensiveProduct = products[0];
+      for (let i = 0; i < products.length; i++) {
+        if (products[i].price > expensiveProduct.price) {
+          expensiveProduct = products[i];
+        }
+      }
+      console.log(expensiveProduct.name + " = " + expensiveProduct.price);
+
+      let expensiveProduct1 = products[0];
+      for (let i = 0; i < products.length; i++) {
+        if (products[i].price < expensiveProduct1.price) {
+          expensiveProduct1 = products[i];
+        }
+      }
+      console.log(expensiveProduct1.name + " = " + expensiveProduct1.price);
+
+      let expensiveQuantity = products[0];
+      for (let i = 0; i < products.length; i++) {
+        if (products[i].quantity > expensiveQuantity.quantity) {
+          expensiveQuantity = products[i];
+        }
+      }
+      console.log(expensiveQuantity.name + " = " + expensiveQuantity.quantity);
+
+      let expensiveQuantity0 = products[0];
+      for (let i = 0; i < products.length; i++) {
+        if (products[i].quantity < expensiveQuantity0.quantity) {
+          expensiveQuantity0 = products[i];
+        }
+      }
+      console.log(
+        expensiveQuantity0.name + " = " + expensiveQuantity0.quantity,
+      );
+
+      // SEARCH FEATURE
+
+      const keyword = "ele";
+      let searchProduct = products.filter((product) =>
+        product.category.toLowerCase().includes(keyword.toLowerCase()),
+      );
+      console.log(searchProduct);
+
+      // SORTING
+
+      let sortPrice = products.sort((a, b) => b.price - a.price);
+      for (let i = 0; i < sortPrice.length; i++) {
+        console.log(sortPrice[i].name + " = " + sortPrice[i].price);
+      }
+
+      let sortQuantity = products.sort((a, b) => a.price - b.price);
+      for (let i = 0; i < sortQuantity.length; i++) {
+        console.log(sortQuantity[i].name + " = " + sortQuantity[i].price);
+      }
+
+      let top3 = products.sort((a, b) => b.price - a.price).slice(0, 3);
+      console.log(top3);
+
+      // LOW STOCK ALERT
+
+      for (let i = 0; i < products.length; i++) {
+        if (products[i].quantity < 5) {
+          console.log(
+            "WARNING: " + products[i].name + " stock is critically low.",
+          );
+        }
+      }
+
+      // CATEGORY SUMMARY
+
+      let electronics = 0;
+      let furniture = 0;
+      let home = 0;
+      for (let i = 0; i < products.length; i++) {
+        if (products[i].category.toUpperCase() == "ELECTRONICS") {
+          electronics++;
+        } else if (products[i].category.toUpperCase() == "FURNITURE") {
+          furniture++;
+        } else if (products[i].category.toUpperCase() == "HOME") {
+          home++;
+        }
+      }
+      console.log("ELECTRONICS : " + electronics);
+      console.log("FURNITURE : " + furniture);
+      console.log("HOME : " + home);
+      
+    </script>
+  </body>
+</html>
