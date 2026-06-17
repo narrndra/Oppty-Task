@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #13233b;
+  padding: 20px 40px;
+}
+
+header h1 {
+  color: white;
+  font-size: 28px;
+}
+
+/* Search */
+.search-btn {
+  width: 35%;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.search-icon {
+  color: white;
+  margin-left: -40px;
+  cursor: pointer;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: lightgray;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px;
+}
+
+/* Left Side */
+.left-box {
+  width: 45%;
+}
+
+.main-watch {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.small-images {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.small-images img {
+  width: 80px;
+  height: 80px;
+  border: 1px solid gray;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Right Side */
+.right-box {
+  width: 35%;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-box h2 {
+  font-size: 40px;
+}
+
+.brand {
+  color: gray;
+  margin-top: 10px;
+}
+
+.price {
+  margin: 20px 0;
+}
+
+.new-price {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  margin-left: 10px;
+}
+
+.discount {
+  color: green;
+  margin-left: 10px;
+}
+
+.description {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Quantity */
+.quantity-box {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.quantity-box button {
+  width: 40px;
+  height: 40px;
+  background: #13233b;
+  color: white;
+  border: none;
+  font-size: 20px;
+}
+
+.quantity-box input {
+  width: 50px;
+  text-align: center;
+}
+
+/* Add to Bag */
+.cart-btn {
+  width: 100%;
+  padding: 15px;
+  background: #13233b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Offer Box */
+.offer-box {
+  border: 1px solid lightgray;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.signup-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #13233b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
