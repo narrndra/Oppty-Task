@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Pizza Order Calculator</title>
+  <link rel="stylesheet" href="pizza.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- LEFT -->
+  <div class="left">
+
+    <h1> BUILD YOUR SMART PIZZA</h1>
+
+    <h2>CRUST</h2>
+    <select id="crust">
+      <option value="thin"> Thin ($8.00)</option>
+      <option value="regular"> Regular ($10.00)</option>
+      <option value="stuffed"> Stuffed ($12.00)</option>
+    </select>
+
+    <h2>SIZE</h2>
+
+    <div class="sizes">
+      <input type="radio" name="pizzaSize" value="small" id="small">
+      <label for="small">Small</label>
+
+      <input type="radio" name="pizzaSize" value="medium" id="medium" checked>
+      <label for="medium">Medium</label>
+
+      <input type="radio" name="pizzaSize" value="large" id="large">
+      <label for="large">Large</label>
+    </div>
+
+    <h2>TOPPINGS</h2>
+
+    <div class="top">
+
+      <label><input type="checkbox" name="topping" value="cheese"> Cheese</label>
+      <label><input type="checkbox" name="topping" value="mushrooms"> Mushrooms</label>
+
+      <label><input type="checkbox" name="topping" value="peppers"> Peppers</label>
+      <label><input type="checkbox" name="topping" value="pepperoni"> Pepperoni</label>
+
+      <label><input type="checkbox" name="topping" value="onions"> Onions</label>
+      <label><input type="checkbox" name="topping" value="sausage"> Chicken</label>
+
+    </div>
+
+  </div>
+
+
+  <!-- RIGHT -->
+
+  <div class="right">
+
+    <h1>🧾 YOUR RECEIPT</h1>
+
+    <div class="receipt">
+
+      <h2 id="pizzaTitle">PIZZA</h2>
+
+      <hr>
+
+      <p>Base: <span id="basePrice">$0</span></p>
+
+      <p>Toppings: <span id="toppingPrice">$0</span></p>
+
+      <p>Subtotal: <span id="subTotal">$0</span></p>
+
+      <p>Discount: <span>10%</span></p>
+
+      <hr>
+
+      <h2>FINAL TOTAL</h2>
+
+      <h1 id="totalPrice">$0</h1>
+
+    </div>
+
+    <button onclick="placeOrder()">PLACE ORDER</button>
+
+  </div>
+
+</div>
+
+</body>
+
+<script src="pizza.js"></script>
+</html>
