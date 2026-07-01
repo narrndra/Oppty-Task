@@ -65,8 +65,6 @@ answer:"Language"
 let currentQuestion = 0;
 let userAnswers = [];
 
-// DOM
-
 let startBtn = document.getElementById("start-btn");
 let welcomeScreen = document.getElementById("welcome-screen");
 let quizScreen = document.getElementById("quiz-screen");
@@ -82,8 +80,6 @@ let submitBtn = document.getElementById("submit-btn");
 let restartBtn = document.getElementById("restart-btn");
 
 
-// Start Quiz
-
 startBtn.addEventListener("click", function(){
 
 welcomeScreen.classList.add("hide");
@@ -94,13 +90,14 @@ loadQuestion();
 });
 
 
-// Load Question
-
 function loadQuestion(){
 
 let q = quizData[currentQuestion];
 
 progress.innerHTML = "Question " + (currentQuestion+1) + " of " + quizData.length;
+
+let percentBar = ((currentQuestion+1)/quizData.length)*100;
+document.getElementById("progress-fill").style.width = percentBar + "%";
 
 question.innerHTML = q.question;
 
@@ -121,7 +118,13 @@ div.addEventListener("click", function(){
 
 userAnswers[currentQuestion] = option;
 
-loadQuestion();
+let allOptions = document.querySelectorAll(".option");
+
+allOptions.forEach(function(item){
+item.classList.remove("selected");
+});
+
+div.classList.add("selected");
 
 });
 
@@ -147,7 +150,6 @@ submitBtn.classList.add("hide");
 
 }
 
-// Next
 
 nextBtn.addEventListener("click", function(){
 
@@ -158,7 +160,6 @@ loadQuestion();
 
 });
 
-// Previous
 
 prevBtn.addEventListener("click", function(){
 
@@ -166,9 +167,9 @@ if(currentQuestion > 0){
 currentQuestion--;
 loadQuestion();
 }
+
 });
 
-// Submit
 
 submitBtn.addEventListener("click", function(){
 
@@ -186,7 +187,6 @@ showResult(score);
 
 });
 
-// Show Result
 
 function showResult(score){
 
@@ -196,11 +196,10 @@ resultScreen.classList.remove("hide");
 let wrong = quizData.length - score;
 let percent = (score/quizData.length)*100;
 
-document.getElementById("score").innerHTML = "Score : " + score;
-document.getElementById("correct").innerHTML = "Correct : " + score;
-document.getElementById("wrong").innerHTML = "Wrong : " + wrong;
-document.getElementById("percentage").innerHTML = "Percentage : " + percent + "%";
-
+document.getElementById("score").innerHTML = "Total <br>" + quizData.length;
+document.getElementById("correct").innerHTML = "Correct <br>" + score;
+document.getElementById("wrong").innerHTML = "Wrong <br>" + wrong;
+document.getElementById("percentage").innerHTML = percent + "%";
 
 let message = "";
 
@@ -221,7 +220,6 @@ document.getElementById("message").innerHTML = message;
 
 }
 
-// Restart
 
 restartBtn.addEventListener("click", function(){
 
