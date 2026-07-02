@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body{
+    background-color: pink;
+  }
+</style>
+<body>
+  
+  <h1>Hi hello </h1>
+  <h2 id="text">This is NarendraDrawaka</h2>
+  <button onclick="textchange()">changetext</button>
+  <button onclick="changeBg()">Click</button>
+
+  <script>
+    function changeBg(){
+      let bgcolors=["red","blue","yellow","pink"];
+      const result=bgcolors[Math.floor(Math.random()*bgcolors.length)];
+      document.body.style.backgroundColor = result;
+    }
+    function textchange(){
+      document.getElementById("text").innerHTML="Read on JS";
+    }
+  </script>
+
+</body>
+</html>
